@@ -39,7 +39,7 @@
 /* USER CODE BEGIN PM */
 
 /* USER CODE END PM */
-	int x = 0;
+	int x = 5;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
