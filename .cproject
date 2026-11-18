@@ -167,12 +167,13 @@
 		<project id="affirmations-rover.null.643647024" name="affirmations-rover"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.515368214;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.515368214.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.803963113;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1692122020">
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.760151894;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.760151894.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1622873533;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1702521485">
 			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.132586244;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.132586244.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1885037413;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.497864788">
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1504387827;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1504387827.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1729205855;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1208802767">
 			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
