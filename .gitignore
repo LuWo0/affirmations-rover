@@ -1,0 +1,40 @@
+# STM32CubeIDE firmware copied in by "Generate Code".
+# Each machine regenerates these from affirmations-rover.ioc
+# using STM32Cube FW_L4 V1.18.2 (install that pack in CubeIDE).
+Drivers/
+Middlewares/
+
+# Build output
+Debug/
+Release/
+build/
+
+# Compiler and linker products, in case a build lands outside Debug/
+*.o
+*.obj
+*.d
+*.su
+*.cyclo
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.size
+
+# CubeIDE / Eclipse files that differ per computer
+.settings/
+.metadata/
+.osx.project
+.linux.project
+.win.project
+RemoteSystemsTempFiles/
+*.launch
+*.tmp
+*.bak
+*.ioc.bak
+
+# OS junk
+.DS_Store
+._*
+Thumbs.db
