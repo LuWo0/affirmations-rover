@@ -23,6 +23,7 @@
 #include "console.h"
 #include "i2c.h"
 #include "tof.h"
+#include "oled.h"
 #include "VL53L1X_api.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -95,6 +96,8 @@ int main(void) {
 	/* USER CODE BEGIN 2 */
 	console_init();
 	i2c_init();
+	oled_init();
+	oled_show_line("You got this");
 	tof_init();
 	i2c_scan();
 

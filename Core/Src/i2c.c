@@ -143,3 +143,23 @@ int i2c_read(uint8_t address, uint16_t index, uint8_t *buffer, uint8_t count) {
 
 	return i2c_finish(0);
 }
+
+int i2c_write_raw(uint8_t address, const uint8_t *bytes, uint8_t count) {
+	if (count == 0 || bytes == 0) {
+		return -1;
+	}
+
+	I2C1->ICR = I2C_ICR_NACKCF | I2C_ICR_STOPCF;
+	I2C1->CR2 = ((uint32_t) address << 1)
+			| ((uint32_t) count << I2C_CR2_NBYTES_Pos) | I2C_CR2_AUTOEND
+			| I2C_CR2_START;
+
+	for (uint8_t i = 0; i < count; i++) {
+		if (i2c_wait(I2C_ISR_TXIS) != 0) {
+			return i2c_finish(1);
+		}
+		I2C1->TXDR = bytes[i];
+	}
+
+	return i2c_finish(0);
+}
