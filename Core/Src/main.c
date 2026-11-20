@@ -22,6 +22,9 @@
 #include "main.h"
 #include "console.h"
 #include "i2c.h"
+#include "tof.h"
+#include "VL53L1X_api.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -92,7 +95,9 @@ int main(void) {
 	/* USER CODE BEGIN 2 */
 	console_init();
 	i2c_init();
+	tof_init();
 	i2c_scan();
+
 	printf("hello\r\n");
 	/* USER CODE END 2 */
 
@@ -105,10 +110,14 @@ int main(void) {
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 	while (1) {
-
-		/* USER CODE END WHILE */
-
-		/* USER CODE BEGIN 3 */
+		uint8_t ready = 0;
+		if (VL53L1X_CheckForDataReady(0x29, &ready) == 0 && ready) {
+			uint16_t mm = 0;
+			if (VL53L1X_GetDistance(0x29, &mm) == 0) {
+				printf("%u mm\r\n", mm);
+			}
+			VL53L1X_ClearInterrupt(0x29);
+		}
 	}
 	/* USER CODE END 3 */
 }
