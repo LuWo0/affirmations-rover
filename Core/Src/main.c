@@ -97,7 +97,7 @@ int main(void) {
 	console_init();
 	i2c_init();
 	oled_init();
-	oled_show_line("You got this");
+	oled_show_line("PLEASE WORK");
 	tof_init();
 	i2c_scan();
 
